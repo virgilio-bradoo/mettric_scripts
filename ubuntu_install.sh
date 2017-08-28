@@ -66,6 +66,7 @@ log_level = info
 logfile = /var/log/odoo/odoo-server.log
 xmlrpc_port = 8069
 EOF
+chown odoo:odoo /etc/odoo-server.conf
 
 # Adding ODOO as a deamon (initscript)
 cp ubuntu/odoo-server /etc/init.d/
